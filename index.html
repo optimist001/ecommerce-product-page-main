@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce product page main</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <script src="javascript/script.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <input type="checkbox"  id="menu-bar">
+        <label for="menu-bar" id="menu-bar">
+            <img src="images/icon-menu.svg" class="icon-menu" alt="icon-menu" id="hambuger" onclick="menuOpen()">
+
+            <img src="images/icon-close.svg" class="icon-close" id="icon-close" alt="icon-close" onclick="menuClose()">
+
+        </label>
+
+        <a href="#" class="logo">
+            <img src="images/logo.svg" alt="logo">
+        </a>
+
+
+        <nav id="nav">
+            <ul>
+                <li><a href="#">collections</a></li>
+                <li><a href="#">men</a></li>
+                <li><a href="#">women</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="user">
+            <a href="#">
+                <img src="images/icon-cart.svg" class="cart" alt="icon-cart">
+            </a>
+            <a href="#">
+                <img src="images/image-avatar.png" class="avatar" alt="image-avatar">
+            </a>
+        </div>
+    </header>
+
+
+    <section class="main">
+
+        <div class="main-img">
+
+            <div class="big-img">
+
+                <img src="images/image-product-1.jpg" alt="image-product-1" id="bigimg">
+
+                <div class="small-img-group">
+
+                    <div class="small-img" id="content1">
+
+                        <img src="images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail" id="imgone" onclick="changeone()">
+
+                    </div>
+
+                    <div class="small-img" id="content2">
+
+                        <img src="images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail" id="imgtwo" onclick="changetwo()">
+
+                    </div>
+
+                    <div class="small-img" id="content3">
+
+                        <img src="images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail" id="imgthree" onclick="changethree()">
+
+                    </div>
+
+                    <div class="small-img" id="content4">
+
+                        <img src="images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail" id="imgfour" onclick="changefour()">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mobile-img-group">
+
+                <img src="images/image-product-1.jpg" alt="image-product-1" class="active" id="mobImg1">
+
+                <img src="images/image-product-2.jpg" alt="image-product-2" id="mobImg2">
+
+                <img src="images/image-product-3.jpg" alt="image-product-3" id="mobImg3">
+
+                <img src="images/image-product-4.jpg" alt="image-product-4" id="mobImg4">
+
+            <!-- <div class="prev-nex-icon">
+                <img src="images/icon-previous.svg" alt="icon-previous" id="prev" onclick="prev()">
+                <img src="images/icon-next.svg" alt="icon-next" id="next" onclick="next()">
+            </div> -->
+
+            <button id="prev" onclick="prev()">&lt</button>
+            <button id="next" onclick="next()">&gt</button>
+
+        </div>
+
+        <div class="main-content">
+            <h3>
+                sneaker company
+            </h3>
+
+            <h1>
+                fall limited edition sneaker
+            </h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, eum porro! Dignissimos mollitia officia amet eos cupiditate vero reprehenderit obcaecati voluptates consequuntur labore blanditiis, minima quae neque eligendi provident tenetur.
+            </p>
+
+            <div class="val">
+                <span class="price">$125.00</span>
+                <span class="disc">50%</span>
+                <span class="init">$250.00</span>
+            </div>
+
+            <div class="order">
+
+                <div class="ordervalue">
+
+                    <button class="decrement" onclick="decrement()"><img src="images/icon-minus.svg" alt=""></button>
+                    <input type="number" value="0" min="0" max="10" id="num" readonly>
+                    <button class="increment" onclick="increment()"><img src="images/icon-plus.svg" alt=""></button>
+
+                </div>
+
+                <button class="btn">
+                    <img src="images/icon-cart.svg" alt="icon-cart"> add to cart
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script></script>
+    
+</body>
+</html>
